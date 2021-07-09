@@ -37,7 +37,7 @@
                 if (!this.password) {
                     alert("password is required")
                 }
-                // alert("error!!!!!")
+                alert("error!!!!!")
             }
         }   
     }
