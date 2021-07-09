@@ -54,7 +54,7 @@
         background-color: antiquewhite;
         margin-right: 20px;
         width: 260px;
-        height:160px;
+        height:490px;
     }
 
 </style>
