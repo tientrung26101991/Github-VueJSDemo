@@ -1,0 +1,8 @@
+Cau truc thu muc
+1 src: 
+   -  main.js
+   - App.vue: Component goc
+   - Assets: Hinh anh, font...
+   - Component: Chua cac component con
+
+(Bat ki file vue nao deu co 3 thanh phan: template, script, style)
