@@ -2,8 +2,8 @@
     <div id="form">
         <form @submit="login">
             <h1>Login Form</h1>
-            <input type="text" v-model="u_name" placeholder="enter user name:" /><br><br>
-            <input type="password" v-model="password" placeholder="enter user password:" /><br><br>
+            <input type="text" v-on:input="u_name = $event.target.value" placeholder="enter user name:" /><br><br>
+            <input type="password" v-on:input="password = $event.target.value" placeholder="enter user password:" /><br><br>
             <button type="submit">Login</button>
         </form>
     </div>
@@ -16,7 +16,7 @@
         data() {
             return {
                 error: [],
-                u_name: null,
+                u_name: 123,
                 password: null
 
             }

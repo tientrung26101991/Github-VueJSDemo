@@ -12,7 +12,6 @@
         <h1>Design by:{{name}}</h1>
         <input type="text" v-model="name" />
         <button v-on:click="click">Click me</button>
-
         <SignUp />
     </div>
 </template>
