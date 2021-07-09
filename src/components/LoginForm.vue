@@ -2,7 +2,7 @@
     <div id="form">
         <form @submit="login">
             <h1>Login Form</h1>
-            <input type="text" v-model="name" placeholder="enter user name:" /><br><br>
+            <input type="text" v-model="u_name" placeholder="enter user name:" /><br><br>
             <input type="password" v-model="password" placeholder="enter user password:" /><br><br>
             <button type="submit">Login</button>
         </form>
@@ -16,7 +16,7 @@
         data() {
             return {
                 error: [],
-                name: null,
+                u_name: null,
                 password: null
 
             }
@@ -24,14 +24,14 @@
 
         methods: {
             login() {
-                alert("Name" + this.name + "Pw:" + this.password);
+                alert("Name" + this.u_name + "Pw:" + this.password);
 
 
-                if(this.name && this.password) {
-                    alert(this.name + "," + this.password)        
+                if(this.u_name && this.password) {
+                    alert(this.u_name + "," + this.password)        
                 }
                 this.error=[];    
-                if (!this.name) {
+                if (!this.u_name) {
                     alert("name is required")
                 }
                 if (!this.password) {
