@@ -6,9 +6,9 @@
         <br>
         <br> -->
         <h1 class="design">Design by:{{name}}</h1>
-        <!-- <input type="text" v-model="name" />
-        <button v-on:click="click">Click me</button>
-        <SignUp />  -->
+        <input type="text" v-model="name" />
+        <!-- <button v-on:click="click">Click me</button> -->
+        <!-- <SignUp />  -->
     </div>
 </template>
 
@@ -23,7 +23,7 @@
 
         data() {
             return {
-                name: "Nguyen Tien Trung",
+                name: null,
             }
         },
 
