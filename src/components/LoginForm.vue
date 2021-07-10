@@ -47,12 +47,11 @@
 <style scoped>
     #form {
         background-color:burlywood;
-        margin-right:400px;
-        margin-top:0px;
-        width:500px;
-        padding:10px;
-        float:right;
-        text-align:center;
         
+        margin-top:0px;
+        padding:100px;
+        height:780px;
+        width: 550px;
+        margin:auto;
     }
 </style>

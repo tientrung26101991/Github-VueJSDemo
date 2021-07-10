@@ -1,25 +1,23 @@
 <template>
     <div class="home">
-        <h1>Template in vue js</h1>
-        <Product />
+        <!-- <Product /> -->
         <LoginForm />
-        <Users />
+        <!-- <Users />
         <br>
-        <br>
-        <h1>Design by:{{name}}</h1>
-        <input type="text" v-model="name" />
+        <br> -->
+        <h1 class="design">Design by:{{name}}</h1>
+        <!-- <input type="text" v-model="name" />
         <button v-on:click="click">Click me</button>
-        <SignUp />
-        <BootStrap/>
+        <SignUp />  -->
     </div>
 </template>
 
 <script>
-    import Product from './Product.vue'   
-    import Users from './Users.vue'
+    // import Product from './Product.vue'   
+    // import Users from './Users.vue'
     import LoginForm from './LoginForm.vue'
-    import SignUp from './SignUp.vue'
-    import BootStrap from './BootStrap.vue'
+    // import SignUp from './SignUp.vue'
+    // import BootStrap from './BootStrap.vue'
     export default {
         name: "Home",
 
@@ -30,11 +28,11 @@
         },
 
         components: {
-            Product,
-            Users,
+            // Product,
+            // Users,
             LoginForm,
-            SignUp,
-            BootStrap
+            // SignUp,
+            // BootStrap
         },
 
         methods: {
@@ -48,7 +46,11 @@
 <style>
 
     .home {
-        background-color:aquamarine;
-        height:600px;
+        background-color: darkgrey;
+        height:780px;
+    }
+
+    .design{
+        background-color: darkseagreen;
     }
 </style>
