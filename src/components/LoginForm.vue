@@ -2,9 +2,9 @@
     <div id="form">
         <form @submit="login">
             <h1>Login Form</h1>
-            <input type="text" v-on:input="u_name = $event.target.value" placeholder="enter user name:" /><br><br>
-            <input type="password" v-on:input="password = $event.target.value" placeholder="enter user password:" /><br><br>
-            <button type="submit">Login</button>
+            <input type="text" v-on:input="u_names = $event.target.value" placeholder="enter user name:" /><br><br>
+            <input type="password" v-on:input="passwords = $event.target.value" placeholder="enter user password:" /><br><br>
+            <b-button pill type="submit">Login</b-button>
         </form>
     </div>
 </template>
@@ -16,25 +16,25 @@
         data() {
             return {
                 error: [],
-                u_name: 123,
-                password: null
+                u_names: null,
+                passwords: null
 
             }
         },
 
         methods: {
             login() {
-                alert("Name" + this.u_name + "Pw:" + this.password);
+                alert("Name" + this.u_names + "Pw:" + this.passwords);
 
 
-                if(this.u_name && this.password) {
-                    alert(this.u_name + "," + this.password)        
+                if(this.u_names && this.passwords) {
+                    alert(this.u_names + "," + this.passwords)        
                 }
                 this.error=[];    
-                if (!this.u_name) {
+                if (!this.u_names) {
                     alert("name is required")
                 }
-                if (!this.password) {
+                if (!this.passwords) {
                     alert("password is required")
                 }
                 alert("error!!!!!")
@@ -44,14 +44,17 @@
 
 </script>
 
-<style scoped>
+<style>
     #form {
-        background-color:burlywood;
-        
+        background-color:#e2e3e5;      
         margin-top:0px;
         padding:100px;
         height:780px;
         width: 550px;
         margin:auto;
+    }
+
+    h1 {
+        text-shadow: 2px 2px 5px red;
     }
 </style>
