@@ -4,22 +4,22 @@
         <Product />
         <LoginForm />
         <Users />
-        <Users />
-        <Users />
-
         <br>
         <br>
         <h1>Design by:{{name}}</h1>
         <input type="text" v-model="name" />
         <button v-on:click="click">Click me</button>
         <SignUp />
+        <BootStrap/>
     </div>
 </template>
+
 <script>
     import Product from './Product.vue'   
     import Users from './Users.vue'
     import LoginForm from './LoginForm.vue'
     import SignUp from './SignUp.vue'
+    import BootStrap from './BootStrap.vue'
     export default {
         name: "Home",
 
@@ -33,7 +33,8 @@
             Product,
             Users,
             LoginForm,
-            SignUp
+            SignUp,
+            BootStrap
         },
 
         methods: {
@@ -43,6 +44,7 @@
         }
     }
 </script>
+
 <style>
 
     .home {
