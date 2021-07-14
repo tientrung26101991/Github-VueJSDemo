@@ -1,14 +1,15 @@
 <template>
   <div id="form">
     <!-- Error Area -->
-    <div>
+    
       <p v-if="error.length">
         <b>Please correct the following errors</b>
         <ul>
-            
+            <li v-for="e in error" v-bind:key="e.id">
+                {{e}}
+            </li>
         </ul>
       </p>
-    </div>
 
     <h1>Login Form</h1>
     <br />
@@ -61,17 +62,17 @@ export default {
 
   methods: {
     login(e) {
-    //  console.log("Name" + this.u_names  + "Password" + this.passwords);
+      //  console.log("Name" + this.u_names  + "Password" + this.passwords);
 
       if (this.u_names && this.passwords) {
-        alert("Successfull")
+        alert("Successfull");
       }
       this.error = [];
       if (!this.u_names) {
-        alert("Name is required !!!!");
+        this.error.push("Name is required !!!!");
       }
       if (!this.passwords) {
-        alert("password is required !!!!");
+        this.error.push("password is required !!!!");
       }
 
       console.warn("errors", this.error);
