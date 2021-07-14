@@ -1,7 +1,6 @@
 <template>
   <div id="form">
-    <!-- Error Area -->
-    
+        <!-- Error Area -->   
       <p v-if="error.length">
         <b>Please correct the following errors</b>
         <ul>
@@ -76,7 +75,7 @@ export default {
       }
 
       console.warn("errors", this.error);
-      e.preventdefault();
+      e.preventDefault();
     },
   },
 };
