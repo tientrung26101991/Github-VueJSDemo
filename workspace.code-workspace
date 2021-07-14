@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "Github-VueJSDemo",
+			"path": "Github-VueJSDemo"
+		},
+		{
+			"path": "..\\VueJS"
+		}
+	],
+	"settings": {}
+}
