@@ -1,37 +1,46 @@
 <template>
   <div id="form">
-    <h1>Login Form</h1><br>
+    <!-- Error Area -->
+    <div>
+      <p v-if="error.length">
+        <b>Please correct the following errors</b>
+        <ul>
+            
+        </ul>
+      </p>
+    </div>
+
+    <h1>Login Form</h1>
+    <br />
     <b-form @submit="login">
-    <!-- label:username -->
+      <!-- label:username -->
       <b-form-group
         id="input-group-1"
         label="User Name:"
         label-for="input-1"
         description="Please input username !!!"
       >
-      
-      <!-- Input username -->
+        <!-- Input username -->
         <b-form-input
           id="input-1"
           type="text"
-          v-on:input="u_names = $event.target.value"
+          v-model="u_names"
           placeholder="enter user name:"
         >
         </b-form-input>
       </b-form-group>
-      <br><br>
-
-        <!-- label password -->
-       <b-form-group id="input-group-2" label="Password:" label-for="input-2">
-      
-      <!-- input password -->
-      <b-form-input
-        type="password"
-        v-on:input="passwords = $event.target.value"
-        placeholder="enter user password:"
-      ></b-form-input>
       <br /><br />
-       </b-form-group>
+
+      <!-- label password -->
+      <b-form-group id="input-group-2" label="Password:" label-for="input-2">
+        <!-- input password -->
+        <b-form-input
+          type="password"
+          v-model="passwords"
+          placeholder="enter user password:"
+        ></b-form-input>
+        <br /><br />
+      </b-form-group>
 
       <b-button variant="primary" type="submit">Login</b-button>
     </b-form>
@@ -51,20 +60,22 @@ export default {
   },
 
   methods: {
-    login() {
-      alert("Name" + this.u_names + "Pw:" + this.passwords);
+    login(e) {
+    //  console.log("Name" + this.u_names  + "Password" + this.passwords);
 
       if (this.u_names && this.passwords) {
-        alert(this.u_names + "," + this.passwords);
+        alert("Successfull")
       }
       this.error = [];
       if (!this.u_names) {
-        alert("name is required");
+        alert("Name is required !!!!");
       }
       if (!this.passwords) {
-        alert("password is required");
+        alert("password is required !!!!");
       }
-      alert("error!!!!!");
+
+      console.warn("errors", this.error);
+      e.preventdefault();
     },
   },
 };
