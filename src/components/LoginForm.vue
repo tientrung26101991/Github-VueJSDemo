@@ -32,16 +32,21 @@
       <br /><br />
 
       <!-- label password -->
-      <b-form-group id="input-group-2" label="Password:" label-for="input-2">
+      <b-form-group 
+        id="input-group-2" 
+        label="Password:" 
+        label-for="input-2"
+        description="Please input password !!!"
+      >
         <!-- input password -->
         <b-form-input
           type="password"
           v-model="passwords"
           placeholder="enter user password:"
         ></b-form-input>
-        <br /><br />
       </b-form-group>
 
+      <br>
       <b-button variant="primary" type="submit">Login</b-button>
     </b-form>
   </div>
