@@ -51,12 +51,13 @@ export default {
   background-color: darkgrey;
   height: 840px;
   background-image: url(https://wallpaperaccess.com/full/109531.jpg);
+  /* background-blend-mode:luminosity; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .design {
-  background-color: darkseagreen;
+  background-color:lightgray;
 }
 </style>

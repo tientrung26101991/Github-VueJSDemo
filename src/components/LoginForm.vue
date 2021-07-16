@@ -88,7 +88,7 @@ export default {
 
 <style>
 #form {
-  background-color: #e2e3e5;
+  background-color:floralwhite;
   margin-top: 0px;
   padding: 100px;
   height: 780px;
