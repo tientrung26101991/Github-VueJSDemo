@@ -1,6 +1,7 @@
 <template>
   <div>
     <HelloWorld />
+
     <div id="app">
       <div class="vue-tempalte">
         <form>
