@@ -6,6 +6,7 @@ import Home from './components/Home.vue'
 import LoginForm from './components/LoginForm.vue' //add
 import Signup from './components/SignUp.vue' //add
 
+
 Vue.use(VueRouter);
 const routes = [
     { path: '/', component: Home },
@@ -18,6 +19,9 @@ const router = new VueRouter({
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import '@/assets/css/main.css'
+
+
 Vue.use(BootstrapVue) // add
 
 Vue.config.productionTip = false
