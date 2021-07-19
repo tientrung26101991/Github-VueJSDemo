@@ -2,7 +2,7 @@
   <div class="bootstrap">
     <b-navbar type="dark" variant="dark">
       <b-navbar-nav>
-        <b-nav-item><router-link to ="/">Home</router-link></b-nav-item>
+        <b-nav-item><router-link to="/">Home</router-link></b-nav-item>
 
         <!-- Navbar dropdowns -->
         <b-nav-item-dropdown text="Lang" right>
@@ -13,8 +13,13 @@
         </b-nav-item-dropdown>
 
         <b-nav-item-dropdown text="User" right>
-          <b-dropdown-item><router-link to = "/signup">SignUp</router-link></b-dropdown-item>
-          <b-dropdown-item href="#">Settings</b-dropdown-item>
+          <b-dropdown-item
+            ><router-link to="/signup">SignUp</router-link></b-dropdown-item
+          >
+          <b-dropdown-item
+            ><router-link to="/add">Add User</router-link></b-dropdown-item
+          >
+          <b-dropdown-item href="#">Update User</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-navbar>
