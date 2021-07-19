@@ -52,7 +52,7 @@ export default {
   float: right;
   background-color: antiquewhite;
   margin-right: 480px;
-  margin-top: 50px;
+  margin-top: 69px;
   width: 970px;
   height: 530px;
   background-image: url(https://wallpaperaccess.com/full/109531.jpg);
