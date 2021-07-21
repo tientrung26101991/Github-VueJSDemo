@@ -1,7 +1,5 @@
 <template>
   <div>
-    <Navigation />
-
     <div id="app">
       <div class="vue-tempalte">
         <form>
@@ -53,10 +51,10 @@
 </template>
 
 <script>
-import Navigation from "./Navigation.vue";
+
 
 export default {
-  components: { Navigation },
+  components: {  },
 
   name: "SignUp",
 

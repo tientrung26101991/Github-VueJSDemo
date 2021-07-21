@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Navigation />
     <div class="users">
       <h1>Add Users Page</h1>
       <form class="addUser">
@@ -16,7 +15,6 @@
 </template>
 
 <script>
-import Navigation from "./Navigation.vue";
 
 export default {
   name: "AddUser",
@@ -26,7 +24,6 @@ export default {
   },
 
   components: {
-    Navigation,
   },
 };
 </script>

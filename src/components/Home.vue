@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <Navigation />
     <LoginForm />
     <h1 class="design">Design by:{{ name }}</h1>
     <input type="text" v-model="name" />
@@ -10,7 +9,6 @@
 <script>
 
 import LoginForm from "./LoginForm.vue";
-import Navigation from "./Navigation.vue";
 
 export default {
   name: "Home",
@@ -22,8 +20,7 @@ export default {
   },
 
   components: {
-    LoginForm,
-    Navigation
+    LoginForm
   },
 
   methods: {
