@@ -68,7 +68,7 @@ export default {
 
   methods: {
     signup() {
-      this.$router.push('/')
+      this.$router.push({name:'home'})
       console.warn(this.fullname + this.email + this.pass);
     },
   },
