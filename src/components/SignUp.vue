@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div id="app">
+  <!-- <div> -->
+    <div id="apps">
       <div class="vue-tempalte">
         <form>
           <h3>Sign Up</h3>
@@ -47,7 +47,7 @@
         </form>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 </template>
 
 <script>
@@ -76,13 +76,13 @@ export default {
 </script>
 
 <style scoped>
-#app {
+#apps {
   float: right;
   background-color: antiquewhite;
   margin-right: 480px;
   margin-top: 69px;
-  width: 970px;
-  height: 530px;
+  width: 1000px;
+  height: 600px;
   background-image: url(https://wallpaperaccess.com/full/109531.jpg);
   /* background-blend-mode:luminosity; */
   background-size: cover;

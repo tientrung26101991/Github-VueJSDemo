@@ -28,6 +28,9 @@ export default {
 </script>
 
 <style>
+.design {
+  margin-top:750px;
+}
 
 .design h1{
   background-color: lightgray;

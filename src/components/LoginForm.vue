@@ -91,7 +91,7 @@ export default {
   background-color:floralwhite;
   margin-top: 0px;
   padding: 100px;
-  height: 780px;
+  height: 950px;
   width: 800px;
   margin: auto;
 }
