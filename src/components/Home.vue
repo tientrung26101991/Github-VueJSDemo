@@ -34,7 +34,7 @@ export default {
 <style>
 .home {
   background-color: darkgrey;
-  height: 680px;
+  height: 700px;
   background-image: url(https://wallpaperaccess.com/full/109531.jpg);
   /* background-blend-mode:luminosity; */
   background-size: cover;

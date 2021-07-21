@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Navigation from "./components/Navigation.vue";
+import Navigation from "./components/Navigation.vue"
 import Footer from "./components/footer.vue";
 
 export default {

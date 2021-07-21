@@ -1,7 +1,7 @@
 <template>
   <div id="form">
         <!-- Error Area -->   
-      <p v-if="error.length">
+      <p v-if="error.length" class="error">
         <b>Please correct the following errors</b>
         <ul>
             <li v-for="e in error" v-bind:key="e.id">
@@ -98,5 +98,10 @@ export default {
 
 h1 {
   text-shadow: 2px 2px 5px red;
+}
+
+.error {
+  color:tomato;
+  border: 1px solid yellowgreen;
 }
 </style>
