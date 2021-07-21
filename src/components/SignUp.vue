@@ -70,6 +70,7 @@ export default {
 
   methods: {
     signup() {
+      this.$router.push('/')
       console.warn(this.fullname + this.email + this.pass);
     },
   },

@@ -2,23 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import BootstrapVue from 'bootstrap-vue' // add
 import VueRouter from 'vue-router' //add
-
-
-import Home from './components/Home.vue'
-import LoginForm from './components/LoginForm.vue' //add
-import Signup from './components/SignUp.vue' //add
-import AddUser from './components/AddUser.vue' //add
-
+import routes from './routes'  //add
 
 Vue.use(VueRouter);
 
-const routes = [
-    { path: '/', component: Home },
-    { path: '/login', component: LoginForm },
-    { path: '/signup', component: Signup },
-    { path: '/add', component: AddUser},
-]
 const router = new VueRouter({
+    mode:'history',
     routes
 })
 
@@ -33,6 +22,6 @@ Vue.use(BootstrapVue) // add
 Vue.config.productionTip = false
 
 new Vue({
-    router: router,
+    router,
     render: h => h(App),
 }).$mount('#app')
