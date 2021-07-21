@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!-- <Product /> -->
-    <HelloWorld />
+    <Navigation />
     <LoginForm />
     <!-- <Users />
         <br>
@@ -17,7 +17,7 @@
 // import Product from './Product.vue'
 // import Users from './Users.vue'
 import LoginForm from "./LoginForm.vue";
-import HelloWorld from "./HelloWorld.vue";
+import Navigation from "./Navigation.vue";
 // import SignUp from './SignUp.vue'
 // import BootStrap from './BootStrap.vue'
 export default {
@@ -33,7 +33,7 @@ export default {
     // Product,
     // Users,
     LoginForm,
-    HelloWorld,
+    Navigation,
     // SignUp,
     // BootStrap
   },

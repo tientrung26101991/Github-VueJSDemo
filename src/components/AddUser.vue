@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HelloWorld />
+    <Navigation />
     <div class="users">
       <h1>Add Users Page</h1>
       <form class="addUser">
@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import HelloWorld from "./HelloWorld.vue";
+import Navigation from "./Navigation.vue";
 
 export default {
   name: "AddUser",
@@ -26,7 +26,7 @@ export default {
   },
 
   components: {
-    HelloWorld,
+    Navigation,
   },
 };
 </script>

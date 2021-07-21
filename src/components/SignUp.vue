@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HelloWorld />
+    <Navigation />
 
     <div id="app">
       <div class="vue-tempalte">
@@ -37,9 +37,9 @@
 </template>
 
 <script>
-import HelloWorld from "./HelloWorld.vue";
+import Navigation from "./Navigation.vue";
 export default {
-  components: { HelloWorld },
+  components: { Navigation },
   name: "SignUp",
   data() {
     return {};
