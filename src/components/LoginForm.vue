@@ -52,7 +52,13 @@
   </div>
 </template>
 
+
 <script>
+import Vue from 'vue';
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+Vue.use(VueAxios,axios)
+
 export default {
   name: "LoginForm",
 
@@ -68,9 +74,12 @@ export default {
     login(e) {
       //  console.log("Name" + this.u_names  + "Password" + this.passwords);
 
-      if (this.u_names && this.passwords) {
-        alert("Successfull");
-      }
+      // 
+      
+      Vue.axios.get('https://reqres.in/api/products/3')
+      .then((resp)=>{
+        console.warn(resp.data.data)
+      })
       this.error = [];
       if (!this.u_names) {
         this.error.push("Name is required !!!!");
@@ -97,11 +106,16 @@ export default {
 }
 
 h1 {
-  text-shadow: 2px 2px 5px red;
+  color: blue;
 }
 
 .error {
   color:tomato;
   border: 1px solid yellowgreen;
+}
+
+button {
+  width: 100px;
+  background-color: skyblue;
 }
 </style>

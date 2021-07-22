@@ -19,6 +19,9 @@
             <router-link :to="{ name: 'signup' }">SignUp</router-link>
           </b-dropdown-item>
           <b-dropdown-item>
+            <router-link :to="{ name: 'list' }">User List</router-link>
+          </b-dropdown-item>
+          <b-dropdown-item>
             <router-link :to="{ name: 'add' }">Add User</router-link>
           </b-dropdown-item>
           <b-dropdown-item href="#">Update User</b-dropdown-item>
