@@ -3,7 +3,7 @@
     <b-navbar type="dark" variant="dark">
       <b-navbar-nav>
         <b-nav-item>
-          <router-link :to="{ name: 'home' }">Home</router-link>
+          <router-link :to="{ name: 'home' }" class="routerLink">Home</router-link>
         </b-nav-item>
 
         <!-- Navbar dropdowns -->
@@ -16,15 +16,15 @@
 
         <b-nav-item-dropdown text="User" right>
           <b-dropdown-item>
-            <router-link :to="{ name: 'signup' }">SignUp</router-link>
+            <router-link :to="{ name: 'signup' }" class="routerLink">SignUp</router-link>
           </b-dropdown-item>
           <b-dropdown-item>
-            <router-link :to="{ name: 'list' }">User List</router-link>
+            <router-link :to="{ name: 'list' }" class="routerLink">User List</router-link>
           </b-dropdown-item>
           <b-dropdown-item>
-            <router-link :to="{ name: 'add' }">Add User</router-link>
+            <router-link :to="{ name: 'add' }" class="routerLink">Add User</router-link>
           </b-dropdown-item>
-          <b-dropdown-item href="#">Update User</b-dropdown-item>
+          <b-dropdown-item>Update User</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-navbar>
@@ -44,5 +44,9 @@ export default {
 <style scoped>
 .bootstrap {
   background-color: darkgrey;
+}
+
+.routerLink{
+    text-decoration: none;
 }
 </style>

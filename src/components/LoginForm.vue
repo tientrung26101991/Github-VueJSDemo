@@ -10,11 +10,12 @@
         </ul>
       </p>
 
+    <!-- Logn Form Area -->
     <h1>Login Form</h1>
     <br />
     <b-form @submit="login">
       
-      <!-- label:username -->
+      <!-- User name area -->
       <b-input-group>
         <b-input-group-prepend>
           <span class="input-group-text"><i class="fa fa-user fa-lg"></i></span>
@@ -24,7 +25,7 @@
       </b-input-group>
       <br />
 
-      <!-- label password -->
+      <!-- Password area-->
      <b-input-group>
         <b-input-group-prepend>
           <span class="input-group-text"><i class="fa fa-lock fa-lg"></i></span>
@@ -38,7 +39,6 @@
     </b-form>
   </div>
 </template>
-
 
 <script>
 import Vue from "vue";
