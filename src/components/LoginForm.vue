@@ -13,38 +13,25 @@
     <h1>Login Form</h1>
     <br />
     <b-form @submit="login">
+      
       <!-- label:username -->
-      <b-form-group
-        id="input-group-1"
-        label="User Name:"
-        label-for="input-1"
-        description="Please input username !!!"
-      >
-        <!-- Input username -->
-        <b-form-input
-          id="input-1"
-          type="text"
-          v-model="u_names"
-          placeholder="enter user name:"
-        >
+      <b-input-group>
+        <b-input-group-prepend>
+          <span class="input-group-text"><i class="fa fa-user fa-lg"></i></span>
+        </b-input-group-prepend>
+        <b-form-input class="LoginInput" size="lg" placeholder="Username" v-model="u_names">
         </b-form-input>
-      </b-form-group>
-      <br /><br />
+      </b-input-group>
+      <br />
 
       <!-- label password -->
-      <b-form-group 
-        id="input-group-2" 
-        label="Password:" 
-        label-for="input-2"
-        description="Please input password !!!"
-      >
-        <!-- input password -->
-        <b-form-input
-          type="password"
-          v-model="passwords"
-          placeholder="enter user password:"
-        ></b-form-input>
-      </b-form-group>
+     <b-input-group>
+        <b-input-group-prepend>
+          <span class="input-group-text"><i class="fa fa-lock fa-lg"></i></span>
+        </b-input-group-prepend>
+          <b-form-input class="LoginInput" size="lg" type="password" placeholder="Password" v-model="passwords">
+          </b-form-input>
+      </b-input-group>
 
       <br>
       <b-button variant="primary" type="submit">Login</b-button>
@@ -54,10 +41,10 @@
 
 
 <script>
-import Vue from 'vue';
-import axios from 'axios'
-import VueAxios from 'vue-axios'
-Vue.use(VueAxios,axios)
+import Vue from "vue";
+import axios from "axios";
+import VueAxios from "vue-axios";
+Vue.use(VueAxios, axios);
 
 export default {
   name: "LoginForm",
@@ -74,12 +61,11 @@ export default {
     login(e) {
       //  console.log("Name" + this.u_names  + "Password" + this.passwords);
 
-      // 
-      
-      Vue.axios.get('https://reqres.in/api/products/3')
-      .then((resp)=>{
-        console.warn(resp.data.data)
-      })
+      //
+
+      Vue.axios.get("https://reqres.in/api/products/3").then((resp) => {
+        console.warn(resp.data.data);
+      });
       this.error = [];
       if (!this.u_names) {
         this.error.push("Name is required !!!!");
@@ -97,12 +83,13 @@ export default {
 
 <style>
 #form {
-  background-color:floralwhite;
-  margin-top: 0px;
+  background-color: floralwhite;
+  /* margin-top: 30px; */
   padding: 100px;
-  height: 950px;
+  height: 500px;
   width: 800px;
-  margin: auto;
+  margin-left: 500px;
+  margin-top: 100px;
 }
 
 h1 {
@@ -110,12 +97,16 @@ h1 {
 }
 
 .error {
-  color:tomato;
+  color: tomato;
   border: 1px solid yellowgreen;
 }
 
 button {
   width: 100px;
   background-color: skyblue;
+}
+
+.input-group-text {
+  height: 55px;
 }
 </style>
