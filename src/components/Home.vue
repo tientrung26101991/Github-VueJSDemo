@@ -1,8 +1,6 @@
 <template>
   <div class="home">
     <LoginForm />
-    <!-- <h1 class="design">Design by:{{ name }}</h1>
-    <input type="text" v-model="name" /> -->
   </div>
 </template>
 

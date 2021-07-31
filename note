@@ -8,3 +8,6 @@ Cau truc thu muc
 (Bat ki file vue nao deu co 3 thanh phan: template, script, style)
 
 HD demo: https://www.youtube.com/watch?v=IP9JSC-Frgc&list=PL8p2I9GklV47GZrhYwnnStpx_B5GqL1Aq&index=21
+
+-Start JSON Server
+json-server --watch db.json

@@ -25,14 +25,14 @@
                 v-on:click.prevent="emitShowModal(user)"
                 class="btn btn-sm btn-info mr-1"
               >
-                Editar
+               Update
               </button>
               <button
                 v-on:click="deleteUser(user._id)"
                 type="submit"
                 class="btn btn-sm btn-danger"
               >
-                Deletar
+               Delete
               </button>
             </form>
           </td>
